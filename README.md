@@ -157,6 +157,6 @@ engine = create_engine('postgresql://catalog:mypassword@localhost/catalog')
 
 #### Notes
 I have used some other resources as a guide.
-- [Fourm](https://discussions.udacity.com/t/aws-dns-connection-error/531024)
+- [Forums](https://discussions.udacity.com/t/aws-dns-connection-error/531024)
 - [Repo](https://github.com/rrjoson/udacity-linux-server-configuration)
 - [Repo](https://github.com/stueken/FSND-P5_Linux-Server-Configuration)
