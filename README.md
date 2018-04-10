@@ -6,7 +6,7 @@ Implement a baseline installation of a Linux distribution on a virtual machine a
 
 These instructions will walk you through the project and running it for testing purposes. See Running section for notes on how to run the project on a live system.
 
-## requirements
+## Requirements
 
 IP address: 18.236.75.38
 
@@ -130,7 +130,7 @@ Run this: sudo vim /etc/apache2/sites-available/catalog.conf
 3. `$ sudo a2ensite catalog`.
 
 
-### 16 - Install and configure PostgreSQL
+### 10 - Install and configure PostgreSQL
 
 1. `$ sudo apt-get install libpq-dev python-dev`.
 2. `$ sudo apt-get install postgresql postgresql-contrib`.
@@ -143,20 +143,20 @@ engine = create_engine('postgresql://catalog:mypassword@localhost/catalog')
 ```
 7. Setup the database with: `$ python /var/www/catalog/catalog/setup_database.py`.
 
-### 17 - Install system monitor tools
+### 11 - Install system monitor tools
 
 1. `$ sudo apt-get update`.
 2. `$ sudo apt-get install glances`.
 3. To start this system monitor program just type this from the command line: `$ glances`.
 4. Type `$ glances -h` to know more about this program's options.
 
-### 19 - Restart and launch the app
+### 12 - Restart and launch the app
 1. `$ sudo service apache2 restart`.
 
 
 
 #### Notes
 I have used some other resources as a guide.
-[Fourm](https://discussions.udacity.com/t/aws-dns-connection-error/531024)
-[Repo](https://github.com/rrjoson/udacity-linux-server-configuration)
-[Repo](https://github.com/stueken/FSND-P5_Linux-Server-Configuration)
+- [Fourm](https://discussions.udacity.com/t/aws-dns-connection-error/531024)
+- [Repo](https://github.com/rrjoson/udacity-linux-server-configuration)
+- [Repo](https://github.com/stueken/FSND-P5_Linux-Server-Configuration)
